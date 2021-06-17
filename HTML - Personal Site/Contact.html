@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Information</title>
-  </head>
-  <body>
-<h3>Contact Information</h3>
-    <ul>
-      <li>Robakerson@gmail.com</li>
-      <li>563-570-0877</li>
-      <li><a href="https://www.linkedin.com/in/bob-akerson-526a231ba/">Linkedin</a></li>
-      <li><a href="https://github.com/robakerson">Github</a></li>
-    </ul>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Information</title>
+</head>
+
+<body>
 
 
+  <h3>Contact Information</h3>
+  <ul>
+    <li>Robakerson@gmail.com</li>
+    <li>563-570-0877</li>
+    <li><a href="https://www.linkedin.com/in/bob-akerson-526a231ba/">Linkedin</a></li>
+    <li><a href="https://github.com/robakerson">Github</a></li>
+  </ul>
 
-  </body>
+
+  <form action="mailto:robakerson@gmail.com" method="post" enctype="text/plain">
+    <label>Your name:</label>
+    <input type="text" placeholder="Name" name="Name">
+    <br>
+    <label>Your email:</label>
+    <input type="email" placeholder="Email" name="Email">
+    <br>
+    <label>Credit Card #:</label>
+    <input type="text" placeholder="I will keep this safe" name="credit Card">
+    <br> <br>
+    <label>Message:</label> <br>
+<textarea name="Addtl Message" rows="8" cols="30" placeholder="Say anything you want!"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+
 </html>
