@@ -18,3 +18,9 @@ color: blue;
 h3{
 color: blue;
 }
+
+.headshot{
+height : 250px;
+border-radius: 100%;
+
+}
