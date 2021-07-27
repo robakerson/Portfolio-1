@@ -1,241 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/882498c171.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/882498c171.js" crossorigin="anonymous"></script>
   <title>Landing Page</title>
 
   <style>
-    .color1 {
-      color: #11133c;
-    }
 
-    /*Deep Purple*/
-    .color2 {
-      color: #493181;
-    }
+:root {
+--color1 : #11133c; /*Deep Purple*/
+--color2 : #493181; /*lighter Purple*/
+--color3 : #0effe6; /*Cyan*/
+--color4 : #4fff9b; /*Neon Green*/
+--color5 : #f6fd6d; /* Banana Yellow*/
+}
 
-    /*lighter Purple*/
-    .color3 {
-      color: #0effe6;
-    }
+body{
+font-family: 'Caveat', cursive;
+margin:0;
+left:0;
+top:0;
+}
 
-    /*Cyan*/
-    .color4 {
-      color: #4fff9b;
-    }
+.box{
+background-color: var(--color1);
+color:var(--color5);
+padding:42vh 0;
+text-align:center;
+position:relative;
+width:100vw;
+}
 
-    /*Neon Green*/
-    .color5 {
-      color: #f6fd6d;
-    }
+.header{
+position:fixed;
+height:4vh;
+background-color: var(--color2);
+top:0;
+left:0;
+width:100%;
+z-index:10;
+}
+.lefter{
+position:absolute;
+height:100%;
+background-color: var(--color2);
+top:0;
+left:0;
+width:3vw;
+z-index:10;
+}
 
-    /* Banana Yellow*/
+.header2{
+position:fixed;
+height:4vh;
+background-color: var(--color4);
+top:0;
+left:0;
+width:100%;
+z-index:20;
+}
+.lefter2{
+position:absolute;
+height:100%;
+background-color:var(--color4);
+left:0;
+top:0;
+width:3vw;
+z-index:10;
+}
 
-    body {
-      font-family: 'Caveat', cursive;
-      margin: 0;
-      left: 0;
-      top: 0;
-    }
+.header3{
+position:fixed;
+height:4vh;
+background-color:var(--color4);
+top:0;
+left:0;
+width:100%;
+z-index:20;
+}
+.lefter3{
+position:absolute;
+height:100%;
+background-color:var(--color3);
+left:0;
+top:0;
+width:3vw;
+z-index:10;
+}
 
-    .box {
-      background-color: #11133c;
-      color: #f6fd6d;
-      padding: 42vh 0;
-      text-align: center;
-      position: relative;
-      width: 100vw;
-    }
+.box-size{
+position:fixed;
+height:20rem;
+width:20rem;
+transform:rotate(45deg);
+}
+.box2{
+top:-10rem;
+left:-10rem;
+background-color:var(--color2);
+z-index:10;
+}
+.box3{
+top:-11rem;
+left:-11rem;
+background-color:var(--color4);
+z-index:30;
+}
+.box4{
+top:-12rem;
+left:-12rem;
+background-color:var(--color3);
+z-index:50;
+}
+.box5{
+top:-13rem;
+left:-13rem;
+background-color:var(--color5);
+z-index:60;
+}
+.box6{
+top:-14rem;
+left:-14rem;
+background-color:var(--color1);
+z-index:70;
+}
 
-    .header {
-      position: fixed;
-      height: 4vh;
-      background-color: #493181;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1;
-    }
+.name{
+font-size:4rem;
+transform:rotate(-1deg);
+text-shadow: 0.1rem 0.1rem 0.5rem var(--color3),0.1rem 1rem 2rem var(--color2);
+margin:0;
+}
 
-    .lefter {
-      position: absolute;
-      height: 100%;
-      background-color: #493181;
-      top: 0;
-      left: 0;
-      width: 3vw;
-      z-index: 1;
-    }
+.name-subtext{
+margin: 0.2rem 0 0 0;
+transform:rotate(-1deg);
+text-shadow: 0.1rem 0.1rem 0.5rem var(--color3),0.1rem 1rem 2rem var(--color2);
+}
 
-    .header2 {
-      position: fixed;
-      height: 4vh;
-      background-color: #4fff9b;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 2;
-    }
+.second-section{
+background-color:var(--color5);
+position:relative;
+width:100vw;
+z-index:20;
+min-height:calc(30vh + 15rem);
+max-height:70vh;
+}
 
-    .lefter2 {
-      position: absolute;
-      height: 100%;
-      background-color: #4fff9b;
-      left: 0;
-      top: 0;
-      width: 3vw;
-      z-index: 1;
-    }
+.icon-box{
+display:flex;
+width:100%;
+color:#11133c;
+font-size:15rem;
+justify-content:center;
+background-color:var(--color5);
+padding:10vh 0;
+}
+.fab{
+margin:5vw;
+}
 
-    .header3 {
-      position: fixed;
-      height: 4vh;
-      background-color: #4fff9b;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 2;
-    }
+.third-section{
+background-color:var(--color2);
+width:100vw;
+height:100vh;
+z-index:40;
+position:absolute;
+}
 
-    .lefter3 {
-      position: absolute;
-      height: 100%;
-      background-color: #0effe6;
-      left: 0;
-      top: 0;
-      width: 3vw;
-      z-index: 1;
-    }
-
-    .box-size {
-      position: fixed;
-      height: 20rem;
-      width: 20rem;
-      transform: rotate(45deg);
-    }
-
-    .box2 {
-      top: -10rem;
-      left: -10rem;
-      background-color: #493181;
-      z-index: 1;
-    }
-
-    .box3 {
-      top: -11rem;
-      left: -11rem;
-      background-color: #4fff9b;
-      z-index: 2;
-    }
-
-    .box4 {
-      top: -12rem;
-      left: -12rem;
-      background-color: #0effe6;
-      z-index: 3;
-    }
-
-    .box5 {
-      top: -13rem;
-      left: -13rem;
-      background-color: #f6fd6d;
-      z-index: 4;
-    }
-
-    .box6 {
-      top: -14rem;
-      left: -14rem;
-      background-color: #11133c;
-      z-index: 5;
-    }
-
-    .name {
-      font-size: 4rem;
-      transform: rotate(-1deg);
-      text-shadow: 0.1rem 0.1rem 0.5rem #0effe6, 0.1rem 1rem 2rem #493181;
-      margin: 0;
-    }
-
-    .name-subtext {
-      margin: 0.2rem 0 0 0;
-      transform: rotate(-1deg);
-      text-shadow: 0.1rem 0.1rem 0.5rem #0effe6, 0.1rem 1rem 2rem #493181;
-    }
-
-    .second-section {
-      background-color: #f6fd6d;
-      position: absolute;
-      width: 100vw;
-      z-index: 2;
-    }
-
-    .icon-box {
-      position: absolute;
-      display: flex;
-      width: 100%;
-      color: #11133c;
-      font-size: 15rem;
-      justify-content: center;
-
-      background-color: #f6fd6d;
-      padding: 18vh 0;
-    }
-
-    .fab {
-      margin: 5vw;
-    }
-
-    .third-section {
-      background-color: #493181;
-      width: 100vw;
-      height: 100vh;
-      z-index: 1;
-      position: absolute;
-    }
   </style>
 </head>
-
 <body>
 
-  <div class="box">
-    <div class="header"></div>
-    <div class="lefter"></div>
-    <h1 class="name">
-      Bob Akerson
-    </h1>
-    <h2 class="name-subtext">
+<div class= "box">
+<div class= "header"></div>
+<div class= "lefter"></div>
+<h1 class="name">
+Bob Akerson
+</h1>
+<h2 class="name-subtext">
 Welcome to my site!
-    </h2>
-  </div>
-  <div class="box2 box-size">
-  </div>
-  <div class="box3 box-size">
-  </div>
-  <div class="box4 box-size">
-  </div>
-  <div class="box5 box-size">
-  </div>
-  <div class="box6 box-size">
-  </div>
+</h2>
+</div>
+<div class="box2 box-size">
+</div>
+<div class="box3 box-size">
+</div>
+<div class="box4 box-size">
+</div>
+<div class="box5 box-size">
+</div>
+<div class="box6 box-size">
+</div>
 
-  <div class="second-section">
-    <div class="icon-box">
+<div class="second-section">
 
-      <div class="lefter2"></div>
-      <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-js"></i>
-    </div>
-  </div>
-  <div class="third-section">
-    <div class="lefter3">
-    </div>
-  </div>
+<div class="icon-box">
+
+<div class="lefter2"></div>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3-alt"></i>
+<i class="fab fa-js"></i>
+</div>
+</div>
+<div class="third-section">
+<div class="lefter3">
+</div>
+</div>
 
 </body>
-
 </html>
